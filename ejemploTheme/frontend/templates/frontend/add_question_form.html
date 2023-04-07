@@ -1,0 +1,54 @@
+{% extends "frontend/base.html" %}
+{% block main %}
+
+<form method="POST" action="/add_question/">
+    {% csrf_token %}
+    <label for="question">Question:</label><br>
+    <input type="text" id="question" name="question"><br>
+  
+    <label for="answer1a">Answer 1a:</label><br>
+    <input type="text" id="answer1a" name="answer1a"><br>
+  
+    <label for="answer1b">Answer 1b:</label><br>
+    <input type="text" id="answer1b" name="answer1b"><br>
+  
+    <label for="answer2a">Answer 2a:</label><br>
+    <input type="text" id="answer2a" name="answer2a"><br>
+  
+    <label for="answer2b">Answer 2b:</label><br>
+    <input type="text" id="answer2b" name="answer2b"><br>
+  
+    <label for="answer3a">Answer 3a:</label><br>
+    <input type="text" id="answer3a" name="answer3a"><br>
+  
+    <label for="answer3b">Answer 3b:</label><br>
+    <input type="text" id="answer3b" name="answer3b"><br>
+  
+    <label for="answer4a">Answer 4a:</label><br>
+    <input type="text" id="answer4a" name="answer4a"><br>
+  
+    <label for="answer4b">Answer 4b:</label><br>
+    <input type="text" id="answer4b" name="answer4b"><br>
+  
+    <label for="correctAnswerA">Correct Answer A:</label><br>
+    <input type="text" id="correctAnswerA" name="correctAnswerA"><br>
+  
+    <label for="correctAnswerB">Correct Answer B:</label><br>
+    <input type="text" id="correctAnswerB" name="correctAnswerB"><br>
+  
+    <label for="responseTime">Response Time:</label><br>
+    <input type="text" id="responseTime" name="responseTime"><br>
+  
+    <label for="level">Level:</label><br>
+    <input type="text" id="level" name="level"><br>
+  
+    <label for="difficulty">Difficulty:</label><br>
+    <input type="text" id="difficulty" name="difficulty"><br>
+  
+    <label for="student_id">Student ID:</label><br>
+    <input type="text" id="student_id" name="student_id"><br>
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+  {% endblock %}

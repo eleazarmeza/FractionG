@@ -1,0 +1,17 @@
+{% extends "frontend/base.html" %}
+
+{% block main %}
+<form method="POST" action="/add_student_func">
+    {% csrf_token %}
+    <label for="group">Group:</label><br>
+    <input type="text" id="group" name="group"><br>
+
+    <label for="list_number">List Number:</label><br>
+    <input type="number" id="list_number" name="list_number"><br>
+
+    <label for="student_id">Student ID:</label><br>
+    <input type="text" id="student_id" name="student_id"><br>
+
+    <input type="submit" value="Add Student">
+</form>
+{% endblock %}
